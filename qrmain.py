@@ -6,7 +6,7 @@ qr = qrcode.QRCode(version=1,
                    box_size=20,
                    border=5)
 
-qr.add_data("https://www.youtube.com")
+qr.add_data(input("Put a link or text >>"))
 qr.make(fit=True)
 
 img = qr.make_image(fill_color="black", back_color="white")
